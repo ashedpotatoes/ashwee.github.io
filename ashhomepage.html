@@ -1,11 +1,105 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'picture picture biography biography biography biography'
+            'picture  picture education education education education'
+        'contact contact education education education education';
+        gap: 10px;
+        background-color: #CBD5C0;
+        padding: 10px;
+    }
+
+    .name-container {
+        grid-area: header;
+        text-align: center;
+    }
+    .bio-container {
+        align-content: center;
+        width: auto;
+        grid-area: biography;
+        background: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    .pic-container {
+        grid-area: picture;
+        background: #FFFFF0;
+        width: 100% !important;
+    }
+
+    .contact-container {
+        grid-area: contact;
+        background: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    .education-container {
+        grid-area: education;
+        background: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    h1 {
+        font-family: "Pacifico", cursive;
+        color: #2F4F4F;
+    }
+    h2, h3 {
+        font-family: "Playfair Display", sans-serif;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+</style>
 <head>
     <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title> Ashton Weeks </title>
 </head>
 <body>
-    <p> Welcome to the site! </p>
+
+    <div class="grid-container">
+        <div class="name-container">
+            <h1> Ashton Weeks </h1>
+        </div>
+        <div class="pic-container"> <h2 style="font-size: 20px; color: #2F4F4F"> pic of meeeeeeee </h2></div>
+        <div class="bio-container"> 
+            <h2 style="font-size: 20px; color: #2F4F4F"> About </h2> 
+            <p style="font-size: 13px; color: #2F4F4F">
+                Hello! My name is Ashton Weeks and I have been programming since 8th grade. I am a relentless problem-solver 
+                who loves to tackle challenges and devote myself to the project at hand. Throughout my career, I have 
+                built an operating system, made a game, coded various class projects, taught kids how to code robots 
+                and even the website you're reading now! Beyond technical skills -- I am a leader who values communication and 
+                diversity in the STEM field and worked towards getting female-identifying students into robotics and coding.
+                <br/>
+                Thank you for taking the time to visit my website -- feel free to take a look around!
+
+            </p>
+        </div>
+        <div class="education-container"> 
+            <h2 style="font-size: 20px; color: #2F4F4F"> Education </h2>
+            <h3 style="font-size: 15px; color: #2F4F4F"> University of Missouri - Kansas City </h3>
+            <p style="font-size: 13px; color: #2F4F4F"> May '25, B.S. Computer Science, Minor in Communications <br />
+                                                        School of Science and Engineering Student Government President, 5 time Dean's List member
+            </p>
+        </div>
+        <div class="contact-container">
+            <h2 style="font-size: 20px; color: #2F4F4F"> Contact </h2>
+            <h3 style="font-size: 15px; color: #2F4F4F"> Email:  </h3>
+            <p style="font-size: 13px; color: #2F4F4F; display:flex"> ashtoneweeks@gmail.com </p>
+            <h3 style="font-size: 15px; color: #2F4F4F"> Phone:  </h3>
+            <p style="font-size: 13px; color: #2F4F4F; display:flex"> 785-551-9454 </p>
+        </div>
+    </div>
 </body>
 </html>
