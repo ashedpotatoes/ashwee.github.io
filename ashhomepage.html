@@ -8,28 +8,31 @@
             'header header header header header header'
             'picture picture biography biography biography biography'
             'picture  picture education education education education'
-        'contact contact education education education education';
+        'contact contact filler filler filler filler';
         gap: 10px;
         background-color: #CBD5C0;
         padding: 10px;
     }
 
+    .filler-container {
+        background-color: #CBD5C0;
+    }
     .name-container {
         grid-area: header;
         text-align: center;
     }
     .bio-container {
-        align-content: center;
         width: auto;
         grid-area: biography;
         background: #FFFFF0;
         padding-left: 10px;
     }
 
+    
     .pic-container {
         grid-area: picture;
+        object-fit: contain;
         background: #FFFFF0;
-        width: 100% !important;
     }
 
     .contact-container {
@@ -42,6 +45,7 @@
         grid-area: education;
         background: #FFFFF0;
         padding-left: 10px;
+
     }
 
     h1 {
@@ -72,7 +76,7 @@
         <div class="name-container">
             <h1> Ashton Weeks </h1>
         </div>
-        <div class="pic-container"> <h2 style="font-size: 20px; color: #2F4F4F"> pic of meeeeeeee </h2></div>
+        <div class="pic-container"> <span> <img src="me.png" style="height: 100%; width:100%"/> </span>  </div>
         <div class="bio-container"> 
             <h2 style="font-size: 20px; color: #2F4F4F"> About </h2> 
             <p style="font-size: 13px; color: #2F4F4F">
@@ -85,6 +89,7 @@
                 Thank you for taking the time to visit my website -- feel free to take a look around!
 
             </p>
+            <h3 style="font-size: 13px; color: #2F4F4F"> <a href="C:\Users\ashto\Source\Repos\ashwee.github.io\Resume - Ashton Weeks .pdf">Click here to view my resume!</a></h3>
         </div>
         <div class="education-container"> 
             <h2 style="font-size: 20px; color: #2F4F4F"> Education </h2>
@@ -95,8 +100,8 @@
         </div>
         <div class="contact-container">
             <h2 style="font-size: 20px; color: #2F4F4F"> Contact </h2>
-            <h3 style="font-size: 15px; color: #2F4F4F"> Email:  </h3>
-            <p style="font-size: 13px; color: #2F4F4F; display:flex"> ashtoneweeks@gmail.com </p>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Email:  </h3>
+                <p style="font-size: 13px; color: #2F4F4F; display:in-line flex"> ashtoneweeks@gmail.com </p>
             <h3 style="font-size: 15px; color: #2F4F4F"> Phone:  </h3>
             <p style="font-size: 13px; color: #2F4F4F; display:flex"> 785-551-9454 </p>
         </div>
