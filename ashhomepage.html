@@ -15,16 +15,63 @@
         margin-left: 7.5%;
         margin-right: 7.5%;
     }
+
+    .accomplishment-container {
+        display: grid;
+        grid-template-areas:
+            'commerce commerce commerce commerce commerce commerce'
+            'stuco stuco stuco stuco stuco stuco'
+            'espresso espresso espresso espresso espresso espresso'
+            'espresso espresso espresso espresso espresso espresso'
+            'robotics robotics robotics robotics robotics robotics';
+        gap: 10px;
+        background-color: #CBD5C0;
+        padding: 10px;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
     body {
         background-color: #CBD5C0;
     }
     .filler-container {
-        background-color: #CBD5C0;
+        background-color: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    .espressos-img{
+        object-fit: contain;
+        max-width: 600px;
+        max-height: 400px;
     }
     .name-container {
         grid-area: header;
         text-align: center;
         background: #CBD5C0;
+    }
+
+    .commerce-container {
+        grid-area: commerce;
+        background: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    .robotics-container {
+        grid-area: robotics;
+        background: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    .espresso-container {
+        grid-area: espresso;
+        background: #FFFFF0;
+        padding-left: 10px;
+    }
+
+    .stuco-container {
+        grid-area: stuco; 
+        background: #FFFFF0;
+        padding-left: 10px;
     }
 
     .skills-container {
@@ -176,7 +223,53 @@
 
     </div>
     <div id="projects" class="display" style="display:none">
-        <h2 style="font-size: 20px; color: #2F4F4F"> hi </h2>
+        <div class="accomplishment-container">
+            <div class="commerce-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> Commerce Bank Internship Projects </h2>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Roles: Software Development Intern, Capstone Project Leader, Agile Team Lead  </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:flex">
+                    Worked with a team of 6 developers to create a functional internal-facing website for Commerce Bank's Annual Hackathon.
+                    I worked in full stack development -- helping with front end accessibility, forms, aesthetics and standards, with creating an SQL
+                    table and the passing of information. Collaborated to make sure the product owner's needs were met and fellow developers got a chance
+                    to learn and improve upon their strengths. <br />
+                    I also led a team of 10 students in a summer-long project centering around the future of crypto in the bank. We worked with a mentor
+                    to form a script, create a powerpoint, interview employees, and compile research from external sources. At the end of the project,
+                    we presented infront of 100+ people, including bank leadership.
+                </p>
+            </div>
+            <div class="stuco-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> School of Science and Engineering Student Council </h2>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Roles: President, Vice President, Representative for CAM (Computing, Analytics, and Mathematics), Lead Freshman Representative </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:flex">
+                    I have worked a myriad of different roles to best represent and advocate for UMKC students. I've helped give sponsorship money to student organizations, increased outreach of clubs,
+                    helped to cement a STEM week in February, and help connect students to research positions. In the future, I plan on increasing presence and to help higher-level STEM courses receive tutoring.
+                </p>
+            </div>
+            <div class="espresso-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> EspressOS </h2>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Roles: Developer, Architect </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:flex">
+                    For my Introduction to Operating Systems class, I created an operating system for my final project using a virtualizer, Ubuntu, and Visual Studio Code. The EspressOS, the system, can
+                    recognize user input and interrupts, create a page table, allocate memory, and find a bootloader and kernel.
+                    <div class="espressos-img"> <span>  <img src="espressos loading.png" style="height: 100%; width:100%" /></span> </div>
+                    A successful loading screen!
+                    Read the report <a href="https://docs.google.com/document/d/1R9qiYt44kgWwRCqOHvN87pluuPBpU0L_qy_FEFODArw/edit?usp=sharing"> here!</a>
+                </p>
+            </div>
+            <div class="robotics-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> Team STEAM Robotics </h2>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Roles: Chief of Marketing, Chief People Officer, Summer Camp Leader </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:flex">
+                    As the CMO for FRC Team 5119, I brought in over $26k for the organization, allowing us to compete in Regionals, afford robot parts, and provide scholarships for student's travelling fees.
+                    I accomplished this by managing a team of approximately 5 people and presenting to local business leaders, writing grants, and hosting fundraisers. Also, I kept up with social media and
+                    any necessary design work for promotional materials and branding. <br />
+                    I also worked as a summer camp leader, working full time to promote the love of STEM in youth (which we also allowed scholarships for to include the most amount of people!) and inspired to
+                    diversify the STEM-space by setting examples for representation and cultivating a welcoming experience.
+                </p>
+            </div>
+        </div>
+        <h1 style="font-size: 15px; color: #2F4F4F; text-align:center"> Check resume on my About Me page for more information! </h1>
+    </div>
     </div>
 </body>
 
