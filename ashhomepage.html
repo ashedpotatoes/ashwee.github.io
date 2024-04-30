@@ -8,18 +8,29 @@
             'header header header header header header'
             'picture picture biography biography biography biography'
             'picture  picture education education education education'
-        'contact contact filler filler filler filler';
+        'contact contact skills skills skills skills';
         gap: 10px;
         background-color: #CBD5C0;
         padding: 10px;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
     }
-
+    body {
+        background-color: #CBD5C0;
+    }
     .filler-container {
         background-color: #CBD5C0;
     }
     .name-container {
         grid-area: header;
         text-align: center;
+        background: #CBD5C0;
+    }
+
+    .skills-container {
+        grid-area: skills;
+        background: #FFFFF0;
+        padding-left: 10px;
     }
     .bio-container {
         width: auto;
@@ -57,8 +68,53 @@
     }
 
     p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Times New Roman", 'Times New Roman', serif;
     }
+
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #FFFFF0;
+        border: none;
+        font-family: "Pacifico", cursive;
+        color: #2F4F4F;
+        text-align: center;
+        font-size: 14px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+
+       .button-container {
+           align-content: center;
+       }
 
 
 </style>
@@ -71,40 +127,71 @@
     <title> Ashton Weeks </title>
 </head>
 <body>
+    <div class="name-container">
+        <h1> Ashton Weeks </h1>
+        <button class="button" onclick="openAspect('about')"><span> About Me</span> </button>
+        <button class="button" onclick="openAspect('projects')"><span> Projects + Experience</span> </button>
+    </div>
+    <div id="about" class="display">
+        <div class="grid-container">
+            <div class="pic-container"> <span> <img src="me.png" style="height: 100%; width:100%" /> </span>  </div>
+            <div class="bio-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> About </h2>
+                <p style="font-size: 14px; color: #2F4F4F">
+                    Hello! My name is Ashton Weeks and I have been programming since 8th grade. I am a relentless problem-solver
+                    who loves to tackle challenges and devote myself to the project at hand. Throughout my career, I have
+                    built an operating system, made a game, coded various class projects, taught kids how to code robots
+                    and even the website you're reading now! Beyond technical skills -- I am a leader who values communication and
+                    diversity in the STEM field and worked towards getting female-identifying students into robotics and coding.
+                    <br />
+                    Thank you for taking the time to visit my website -- feel free to take a look around!
 
-    <div class="grid-container">
-        <div class="name-container">
-            <h1> Ashton Weeks </h1>
-        </div>
-        <div class="pic-container"> <span> <img src="me.png" style="height: 100%; width:100%"/> </span>  </div>
-        <div class="bio-container"> 
-            <h2 style="font-size: 20px; color: #2F4F4F"> About </h2> 
-            <p style="font-size: 13px; color: #2F4F4F">
-                Hello! My name is Ashton Weeks and I have been programming since 8th grade. I am a relentless problem-solver 
-                who loves to tackle challenges and devote myself to the project at hand. Throughout my career, I have 
-                built an operating system, made a game, coded various class projects, taught kids how to code robots 
-                and even the website you're reading now! Beyond technical skills -- I am a leader who values communication and 
-                diversity in the STEM field and worked towards getting female-identifying students into robotics and coding.
-                <br/>
-                Thank you for taking the time to visit my website -- feel free to take a look around!
-
-            </p>
-            <h3 style="font-size: 13px; color: #2F4F4F"> <a href="https://ashedpotatoes.github.io/ashwee.github.io/Resume%20-%20Ashton%20Weeks%20.pdf"> Click here to view my resume!</a></h3>
-        </div>
-        <div class="education-container"> 
-            <h2 style="font-size: 20px; color: #2F4F4F"> Education </h2>
-            <h3 style="font-size: 15px; color: #2F4F4F"> University of Missouri - Kansas City </h3>
-            <p style="font-size: 13px; color: #2F4F4F"> May '25, B.S. Computer Science, Minor in Communications <br />
-                                                        School of Science and Engineering Student Government President, 5 time Dean's List member
-            </p>
-        </div>
-        <div class="contact-container">
-            <h2 style="font-size: 20px; color: #2F4F4F"> Contact </h2>
+                </p>
+                <h3 style="font-size: 13px; color: #2F4F4F"> <a href="https://ashedpotatoes.github.io/ashwee.github.io/Resume%20-%20Ashton%20Weeks%20.pdf"> Click here to view my resume!</a></h3>
+            </div>
+            <div class="education-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> Education </h2>
+                <h3 style="font-size: 15px; color: #2F4F4F"> University of Missouri - Kansas City </h3>
+                <p style="font-size: 14px; color: #2F4F4F">
+                    May '25, B.S. Computer Science, Minor in Communications <br />
+                    School of Science and Engineering Student Government President, 5 time Dean's List member
+                </p>
+            </div>
+            <div class="contact-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> Contact </h2>
                 <h3 style="font-size: 15px; color: #2F4F4F"> Email:  </h3>
-                <p style="font-size: 13px; color: #2F4F4F; display:in-line flex"> ashtoneweeks@gmail.com </p>
-            <h3 style="font-size: 15px; color: #2F4F4F"> Phone:  </h3>
-            <p style="font-size: 13px; color: #2F4F4F; display:flex"> 785-551-9454 </p>
+                <p style="font-size: 14px; color: #2F4F4F; display:in-line flex"> ashtoneweeks@gmail.com </p>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Phone:  </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:flex"> 785-551-9454 </p>
+            </div>
+            <div class="skills-container">
+                <h2 style="font-size: 20px; color: #2F4F4F"> Skills </h2>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Languages:  </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:in-line flex"> C++, Java, Javascript, HTML, CSS, SQL </p>
+                <h3 style="font-size: 15px; color: #2F4F4F"> Relevant courses:  </h3>
+                <p style="font-size: 14px; color: #2F4F4F; display:flex"> Data Structures, Algorithms, Applied Probability & Statistics, Linear Algebra, Calculus I & II, Website Design, 
+                                                                            Data Communication & Networking, Database Management, Ethics, Discrete Math I & II, Problem Solving and Programming I & II </p>
+            </div>
         </div>
+
+    </div>
+    <div id="projects" class="display" style="display:none">
+        <h2 style="font-size: 20px; color: #2F4F4F"> hi </h2>
     </div>
 </body>
+
+<script>
+    function openAspect(aspectName) {
+        var i;
+        var x = document.getElementsByClassName("display");
+        for (i = 0; i < x.length; i++)
+
+    {
+        x[i].style.display = "none";
+    }
+
+    document.getElementById(aspectName).style.display = "block";
+    }
+
+</script>
 </html>
